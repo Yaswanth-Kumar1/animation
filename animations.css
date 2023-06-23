@@ -1,0 +1,48 @@
+div{
+    width: 200px;
+    height: 100px;
+    color:aliceblue;
+    margin: 15px 0px;
+    box-shadow: 4px 4px 3px gray;
+    
+}
+.transition{
+    background: blue;
+    transition: all 2s linear;
+    box-sizing: border-box;
+   
+}
+.transition:hover{
+    transform: translateX(100px);
+    background-color: aqua;
+    opacity: 0.5;
+}
+.animation{
+    background-color: brown;
+    animation-name: movingAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+
+    
+}
+
+@keyframes movingAnimation{
+    0%{
+        transform: rotateZ(-15deg);
+    }
+    50%{
+        transform:rotateZ(15deg) ;
+        background-color: bisque;
+    }
+    75%{
+        transform: rotateZ(-15deg);
+        background-color: rgb(238, 149, 15);
+    }
+    100%{
+        transform: rotateZ(15deg);
+
+    }
+}
+h1{
+    text-shadow: 2px 2px 3px rgb(253, 6, 6);
+}
